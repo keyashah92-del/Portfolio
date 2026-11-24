@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXX9KXW9');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Keya Shah: consumer insights, marketing analytics and brand storytelling. Portfolio.">
@@ -829,9 +836,47 @@ h2 { font-size: clamp(26px, 3.6vw, 38px); }
 @keyframes fall { to { transform: translate(-120px, 900px) rotate(300deg); } }
 @media (prefers-reduced-motion: reduce) { .bgl .draw { stroke-dashoffset: 0; } }
 @media print { .bgfx { display: none; } }
+
+/* social media section */
+#social { scroll-margin-top: 80px; }
+.sm-stats { list-style: none; margin: 0 0 34px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 2px solid var(--ink); }
+.sm-stats li { padding: 18px 16px; display: flex; flex-direction: column; gap: 2px; }
+.sm-stats li + li { border-left: 1px solid var(--line); }
+.sm-stats b { font-family: var(--font-display); font-weight: 400; font-size: clamp(32px, 4.4vw, 46px); line-height: 1; }
+.sm-stats span { font-size: 13px; font-weight: 600; margin-top: 6px; }
+.sm-stats em { font-style: normal; font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.sm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.sm-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+.sm-card:hover { transform: translateY(-4px); box-shadow: 0 22px 36px -26px rgba(30, 22, 10, .55); }
+.sm-shot { align-self: start; border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 1px var(--line); background: #000; }
+.sm-shot img { display: block; width: 100%; height: auto; }
+.sm-card:first-child { grid-column: 1 / -1; grid-template-columns: 220px minmax(0, 1fr); }
+.sm-plat { color: var(--muted); margin-bottom: 4px; }
+.sm-card h3 { font-size: 23px; line-height: 1.05; }
+.sm-kick { color: var(--muted); font-size: 13px; margin: 4px 0 12px; }
+.star { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 7px 10px; margin: 0; font-size: 13.5px; line-height: 1.45; }
+.star dt { font-family: var(--font-display); font-size: 18px; line-height: 1.1; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--ink); display: grid; place-items: center; font-size: 12px; font-family: var(--font-mono); }
+.star dd { margin: 0; }
+.star dd.res { background: color-mix(in srgb, var(--hi) 38%, transparent); border-radius: 6px; padding: 3px 8px; margin-left: -8px; }
+.star dd.res b { font-weight: 700; }
+@media (max-width: 860px) { .sm-grid { grid-template-columns: minmax(0, 1fr); } .sm-card:first-child { grid-template-columns: 150px minmax(0, 1fr); } .sm-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sm-stats li:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); } .sm-stats li:nth-child(4) { border-top: 1px solid var(--line); } }
+@media (max-width: 520px) { .sm-card, .sm-card:first-child { grid-template-columns: 1fr; } .sm-shot { max-width: 260px; } }
+@media (max-width: 480px) { .wrap > nav .brand { font-size: 21px; } nav a.l { padding: 4px 7px; font-size: 12px; } }
+.sm-card.sm-land { grid-template-columns: 1fr; }
+.sm-card.sm-land .sm-shot { background: #fff; }
+@media (max-width: 520px) { .sm-card.sm-land .sm-shot { max-width: none; } }
+a.sm-shot { position: relative; display: block; text-decoration: none; }
+.sm-view { position: absolute; left: 8px; bottom: 8px; display: inline-flex; align-items: center; gap: 4px; background: #F6F0E3; color: #161412; font: 600 11px var(--font-body); padding: 4px 9px; border-radius: 999px; box-shadow: 0 4px 10px -4px rgba(0,0,0,.5); transition: background .25s; }
+a.sm-shot:hover .sm-view { background: #F0D264; }
+a.sm-shot img { transition: transform .5s cubic-bezier(.2,.7,.2,1); } a.sm-shot:hover img { transform: scale(1.04); }
+.sm-link { margin-top: 12px; font-size: 13px; }
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXX9KXW9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 
 
@@ -857,6 +902,7 @@ h2 { font-size: clamp(26px, 3.6vw, 38px); }
     <ul>
       <li><a class="l" href="#top">Bio</a></li>
       <li><a class="l" href="#entries">Work</a></li>
+      <li><a class="l" href="#social">Social</a></li>
       <li><a class="l" href="#path">Experience</a></li>
       <li><a class="l pill" href="#contact">Get in touch</a></li>
     </ul>
@@ -1057,6 +1103,91 @@ h2 { font-size: clamp(26px, 3.6vw, 38px); }
     </ol>
   </section>
 
+  <section id="social">
+    <div class="sec-head">
+      <p class="mono">Social media</p>
+      <div>
+        <h2>Engagement and reach.</h2>
+        <p class="sec-intro">Posts and campaigns I have run, each told as Situation, Task, Action and Result.</p>
+      </div>
+    </div>
+    <ul class="sm-stats" aria-label="Headline numbers"><li><b>42.1K</b><span>views on one TikTok</span><em>Where in NYC</em></li><li><b>27.9K</b><span>LinkedIn impressions</span><em>Canva World Tour post</em></li><li><b>2,453</b><span>shares on two collab reels</span><em>Devdoot</em></li><li><b>45%</b><span>increase in enrollment</span><em>Koart Studio</em></li></ul>
+    <div class="sm-grid">
+      <article class="sm-card">
+        <div class="sm-shot"><img src="social-wollman.jpg" alt="Screenshot: Ice skating in NYC and what it costs" loading="lazy"></div>
+        <div class="sm-body">
+          <p class="mono sm-plat">TikTok · Where in NYC</p>
+          <h3>Ice skating in NYC and what it costs</h3>
+          <p class="sm-kick">A carousel comparing the city's rinks by price</p>
+          <dl class="star">
+            <dt>S</dt><dd>New Yorkers plan winter outings but rink prices are confusing and scattered.</dd>
+            <dt>T</dt><dd>Make one post that answers "where can I skate, and what will it cost?"</dd>
+            <dt>A</dt><dd>Built a carousel comparing NYC rinks side by side, from free to $22, with entry and rental prices on each slide.</dd>
+            <dt>R</dt><dd class="res"><b>42.1K views</b>, 2,759 likes, <b>1,362 saves</b> and 992 shares. The high save count shows people kept it to use.</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="sm-card sm-land">
+        <div class="sm-shot"><img src="social-canva.jpg" alt="Screenshot: Canva World Tour" loading="lazy"></div>
+        <div class="sm-body">
+          <p class="mono sm-plat">LinkedIn · Personal</p>
+          <h3>Canva World Tour</h3>
+          <p class="sm-kick">A post about Canva's pop-up bus in New York</p>
+          <dl class="star">
+            <dt>S</dt><dd>Canva brought its World Tour pop-up bus to New York.</dd>
+            <dt>T</dt><dd>Turn a brand event into a post people would want to engage with.</dd>
+            <dt>A</dt><dd>Wrote and posted about the experience, then pinned Canva's comment and replied to keep the conversation going.</dd>
+            <dt>R</dt><dd class="res"><b>27,914 impressions</b>, and Canva's official page (2.9M followers) commented on the post.</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="sm-card">
+        <a class="sm-shot" href="https://www.instagram.com/reel/DL9zqoMS0nx/" target="_blank" rel="noopener"><img src="social-neha.jpg" alt="Screenshot: Creator collab with a doctor" loading="lazy"><span class="sm-view">View post <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        <div class="sm-body">
+          <p class="mono sm-plat">Instagram · Devdoot</p>
+          <h3>Creator collab with a doctor</h3>
+          <p class="sm-kick">"Why juggle 5 apps when 1 can do it all?" · July 2025</p>
+          <dl class="star">
+            <dt>S</dt><dd>Devdoot, an early-stage healthcare startup, launched an all-in-one care app for therapy, nutrition, eldercare and parenting, and needed people to notice it.</dd>
+            <dt>T</dt><dd>Reach a wider audience through a voice they already trust.</dd>
+            <dt>A</dt><dd>As social media manager, ran a collab reel with a verified doctor creator, posted jointly on both accounts.</dd>
+            <dt>R</dt><dd class="res"><b>1,289 shares</b> and <b>245 comments</b>.</dd>
+          </dl>
+          <a class="out sm-link" href="https://www.instagram.com/reel/DL9zqoMS0nx/" target="_blank" rel="noopener">Watch the reel on Instagram <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+      <article class="sm-card">
+        <a class="sm-shot" href="https://www.instagram.com/reel/DLmNIVDvo1n/" target="_blank" rel="noopener"><img src="social-nakashi.jpg" alt="Screenshot: "The meltdown" creator collab" loading="lazy"><span class="sm-view">View post <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        <div class="sm-body">
+          <p class="mono sm-plat">Instagram · Devdoot</p>
+          <h3>"The meltdown" creator collab</h3>
+          <p class="sm-kick">Instagram reel · July 2025</p>
+          <dl class="star">
+            <dt>S</dt><dd>Same goal: grow downloads for Devdoot's all-in-one care app.</dd>
+            <dt>T</dt><dd>Show how one app can replace many in a busy family's day.</dd>
+            <dt>A</dt><dd>As social media manager, ran a collab reel with a creator in a relatable "meltdown" format.</dd>
+            <dt>R</dt><dd class="res"><b>1,164 shares</b> and <b>87 comments</b>.</dd>
+          </dl>
+          <a class="out sm-link" href="https://www.instagram.com/reel/DLmNIVDvo1n/" target="_blank" rel="noopener">Watch the reel on Instagram <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+      <article class="sm-card">
+        <div class="sm-shot"><img src="koart-room-1.jpg" alt="Screenshot: Spring Reset influencer event" loading="lazy"></div>
+        <div class="sm-body">
+          <p class="mono sm-plat">Instagram · Koart Studio</p>
+          <h3>Spring Reset influencer event</h3>
+          <p class="sm-kick">Eight creators, no paid budget</p>
+          <dl class="star">
+            <dt>S</dt><dd>A small creative studio in Brooklyn with a tight marketing budget.</dd>
+            <dt>T</dt><dd>Get the Spring Reset event seen and grow enrollment without paid influencer deals.</dd>
+            <dt>A</dt><dd>Worked with the team to bring 8 influencers on board through barter collaborations, in exchange for covering the event.</dd>
+            <dt>R</dt><dd class="res">Event coverage across their channels and a <b>45% increase in enrollment</b>.</dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section id="tools">
     <div class="lensbox">
       <div class="lens-copy">
@@ -1189,7 +1320,7 @@ document.querySelectorAll('.copy').forEach(function (btn) {
   function openHash() { var id = location.hash.slice(1); if (id && panels.some(function (p) { return p.id === id; })) show(id, true); }
   addEventListener('hashchange', openHash); openHash();
   // reveal on scroll
-  var els = document.querySelectorAll('.lensbox, .sec-head, .xp li, .stop, .contact > *, .strip .pol, .proof li, .cols details');
+  var els = document.querySelectorAll('.sm-card, .sm-stats li, .lensbox, .sec-head, .xp li, .stop, .contact > *, .strip .pol, .proof li, .cols details');
   els.forEach(function (el, i) { el.classList.add('rv'); });
   document.querySelectorAll('.strip .pol, .proof li').forEach(function (el, i) { el.style.setProperty('--d', (i % 3) * 0.12 + 's'); });
   if ('IntersectionObserver' in window && !reduce) {
